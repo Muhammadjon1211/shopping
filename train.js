@@ -1,3 +1,25 @@
+//H-TASK (NodeJS)
+/*
+shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, 
+faqat positive qiymatlarni olib string holatda return qilsin
+MASALAN: getPositive([1, -4, 2]) return qiladi "12"
+*/
+const getPositive = (array) => {
+    newArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] >= 0) {
+            newArray.push(array[i])
+        }
+    }
+    return newArray.join("")
+}
+
+const result = getPositive([1, -4, 2])
+console.log(result);
+
+
+
+
 // MITASK-F
 /* 
 Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
@@ -7,18 +29,18 @@ MASALAN: findDoublers("hello") return true return qiladi
 
 // h e l l o => h => e l l o=> l == h, e, l, o 
 
-const findDoublers = (string) => {
-    const setString = new Set(string)
-    console.log(setString, typeof setString)
-    const newString = [...setString].join('')
-    console.log(newString, typeof newString)
-    if (string.length !== newString.length) {
-        return true
-    } return false
-}
+// const findDoublers = (string) => {
+//     const setString = new Set(string)
+//     console.log(setString, typeof setString)
+//     const newString = [...setString].join('')
+//     console.log(newString, typeof newString)
+//     if (string.length !== newString.length) {
+//         return true
+//     } return false
+// }
 
-const result = findDoublers('helo')
-console.log(result)
+// const result = findDoublers('helo')
+// console.log(result)
 
 
 
