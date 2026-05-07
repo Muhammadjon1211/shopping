@@ -1,21 +1,50 @@
+//J-MITASK (NodeJS)
+/*
+Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+ */
+const majorityElement = (array) => {
+    const counts = {};
+
+    let maxCount = 0;
+    let mostRepeated;
+
+    for (let num of array) {
+        counts[num] = (counts[num] || 0) + 1;
+
+        if (counts[num] > maxCount) {
+            maxCount = counts[num];
+            mostRepeated = num
+        }
+    }
+    return mostRepeated
+}
+
+const result = majorityElement([1,2,3,4,5,4,3,4])
+console.log(result)
+
+// [1,2,3,4,5,4,3,4]
+// [1,2,3,4,5,4,3,4]
+
+
 //H-TASK (NodeJS)
 /*
 shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, 
 faqat positive qiymatlarni olib string holatda return qilsin
 MASALAN: getPositive([1, -4, 2]) return qiladi "12"
 */
-const getPositive = (array) => {
-    newArray = []
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] >= 0) {
-            newArray.push(array[i])
-        }
-    }
-    return newArray.join("")
-}
+// const getPositive = (array) => {
+//     newArray = []
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] >= 0) {
+//             newArray.push(array[i])
+//         }
+//     }
+//     return newArray.join("")
+// }
 
-const result = getPositive([1, -4, 2])
-console.log(result);
+// const result = getPositive([1, -4, 2])
+// console.log(result);
 
 
 
