@@ -1,18 +1,35 @@
+# K-TASK
+'''Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
+MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"'''
+
+
+def find_longest(word):
+    word_array = word.split()
+    longest = ''
+    for i in word_array:
+        if len(i) > len(longest):
+            longest = i
+    return longest
+
+
+print(find_longest("MyUzbekistan I come from Uzbekistan"))
+
+
 # I-TASK
 '''Shunday function tuzing, unga string argument pass bolsin. 
 Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
 MASALAN: get_digits("m14i1t") return qiladi "141"'''
 
 
-def get_digits(text):
-    new_string = ''
-    for i in text:
-        if i >= "0" and i <= "9":
-            new_string += i
-    return new_string
+# def get_digits(text):
+#     new_string = ''
+#     for i in text:
+#         if i >= "0" and i <= "9":
+#             new_string += i
+#     return new_string
 
 
-print(get_digits("m14i1t"))
+# print(get_digits("m14i1t"))
 
 # G-TASK
 '''

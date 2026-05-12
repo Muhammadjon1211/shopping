@@ -1,27 +1,44 @@
+// L-MITASK
+/* 
+Shunday function yozing, u string qabul qilsin va string ichidagi hamma 
+sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+*/
+
+const reverseSentence = (gap) => {
+    let newArray = gap.split(" ");
+    let reverseArray = newArray.map(word => word.split("").reverse().join('')).join(" ")
+    return reverseArray
+
+}
+
+const result = reverseSentence("damn you nigga")
+console.log(result)
+
 //J-MITASK (NodeJS)
 /*
 Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
  */
-const majorityElement = (array) => {
-    const counts = {};
+// const majorityElement = (array) => {
+//     const counts = {};
 
-    let maxCount = 0;
-    let mostRepeated;
+//     let maxCount = 0;
+//     let mostRepeated;
 
-    for (let num of array) {
-        counts[num] = (counts[num] || 0) + 1;
+//     for (let num of array) {
+//         counts[num] = (counts[num] || 0) + 1;
 
-        if (counts[num] > maxCount) {
-            maxCount = counts[num];
-            mostRepeated = num
-        }
-    }
-    return mostRepeated
-}
+//         if (counts[num] > maxCount) {
+//             maxCount = counts[num];
+//             mostRepeated = num
+//         }
+//     }
+//     return mostRepeated
+// }
 
-const result = majorityElement([1,2,3,4,5,4,3,4])
-console.log(result)
+// const result = majorityElement([1,2,3,4,5,4,3,4])
+// console.log(result)
 
 // [1,2,3,4,5,4,3,4]
 // [1,2,3,4,5,4,3,4]
