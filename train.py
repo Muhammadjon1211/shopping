@@ -1,19 +1,19 @@
 # M-TASK (PYTHON)
-"""
-Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, 
-orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
-MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
-"""
+# """
+# Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham,
+# orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+# MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+# """
 
 
-def palindrom_check(word):
-    reverse_word = word[::-1]
-    if word == reverse_word:
-        return True
-    return False
+# def palindrom_check(word):
+#     reverse_word = word[::-1]
+#     if word == reverse_word:
+#         return True
+#     return False
 
 
-print(palindrom_check("dam"))
+# print(palindrom_check("dam"))
 
 
 # K-TASK

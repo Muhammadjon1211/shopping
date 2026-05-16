@@ -1,3 +1,27 @@
+// N-TASK
+/* 
+Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin 
+va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan 
+tashkil topgan object hosil qilib, 
+hosil bolgan objectlarni array ichida qaytarsin.
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
+*/
+
+const getSquareNumbers = (array) => {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        newArray.push({'number': array[i], 'square':array[i]**2})
+    }
+    return newArray
+}
+
+const result = getSquareNumbers([1, 2, 3])
+console.log(result)
+
+
+
+
+
 // L-MITASK
 /* 
 Shunday function yozing, u string qabul qilsin va string ichidagi hamma 
@@ -5,15 +29,15 @@ sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin
 MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 */
 
-const reverseSentence = (gap) => {
-    let newArray = gap.split(" ");
-    let reverseArray = newArray.map(word => word.split("").reverse().join('')).join(" ")
-    return reverseArray
+// const reverseSentence = (gap) => {
+//     let newArray = gap.split(" ");
+//     let reverseArray = newArray.map(word => word.split("").reverse().join('')).join(" ")
+//     return reverseArray
 
-}
+// }
 
-const result = reverseSentence("damn you nigga")
-console.log(result)
+// const result = reverseSentence("damn you nigga")
+// console.log(result)
 
 //J-MITASK (NodeJS)
 /*
