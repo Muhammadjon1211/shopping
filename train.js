@@ -1,4 +1,4 @@
-// N-TASK
+// N-MITASK
 /* 
 Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin 
 va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan 

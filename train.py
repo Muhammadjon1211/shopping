@@ -1,3 +1,23 @@
+"""
+O-TASK (PYTHON)
+
+Shunday function yozing, u har xil valuelardan iborat array qabul qilsin 
+va List ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
+MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
+"""
+
+
+def calculate_summary(numbers):
+    sum_num = 0
+    for i in numbers:
+        if type(i) == int:
+            sum_num += i
+    return sum_num
+
+
+print(calculate_summary([10, "10", {"son": 10}, True, 35, 45, "45"]))
+
+
 # M-TASK (PYTHON)
 # """
 # Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham,
