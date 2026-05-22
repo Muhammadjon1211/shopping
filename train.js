@@ -1,3 +1,27 @@
+/*
+P-TASK (NodeJS)
+
+Shunday function yozing, u object qabul qilsin va arrayni 
+object arrayga otkazib arrayni qaytarsin qaytarsin.
+MASALAN: objectToArray( {a: 10, b: 20}) return [['a', 10], ['b', 20]]
+*/
+
+const objectToArray = (object) => {
+    let newArray = []
+    for (const [key, value] of Object.entries(object)) {
+        newArray.push(Array(key,value))
+    }
+    return newArray
+}
+
+const result = objectToArray({a: 10, b: 20})
+console.log(result)
+
+
+
+
+
+
 // N-MITASK
 /* 
 Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin 
@@ -7,16 +31,16 @@ hosil bolgan objectlarni array ichida qaytarsin.
 MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
 */
 
-const getSquareNumbers = (array) => {
-    let newArray = []
-    for (let i = 0; i < array.length; i++) {
-        newArray.push({'number': array[i], 'square':array[i]**2})
-    }
-    return newArray
-}
+// const getSquareNumbers = (array) => {
+//     let newArray = []
+//     for (let i = 0; i < array.length; i++) {
+//         newArray.push({'number': array[i], 'square':array[i]**2})
+//     }
+//     return newArray
+// }
 
-const result = getSquareNumbers([1, 2, 3])
-console.log(result)
+// const result = getSquareNumbers([1, 2, 3])
+// console.log(result)
 
 
 
